@@ -6,15 +6,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context="com.example.luisgarfias.fouringenierosfoundation.MainActivity">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/rocket_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rocket" />
+
+    <ImageView
+        android:id="@+id/fif_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/Outside_margin"
+        android:src="@drawable/FIF_Horizontal_WHITE"
+        android:background="@color/logo_transparency"
+        />
+    <TextView
+        android:id="@+id/contact_info_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rocket_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="@dimen/Outside_margin"
+        android:layout_marginBottom="@dimen/Outside_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/contact_info_size"
+        android:paddingHorizontal="@dimen/space_between_lines"
+        android:text="@string/fif_hashtag"
+        android:background="@color/Contact_info_background" />
+
+    <TextView
+        android:id="@+id/contact_info_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_info_1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="@dimen/Outside_margin"
+        android:paddingHorizontal="@dimen/space_between_lines"
+        android:textSize="@dimen/contact_info_size"
+        android:textStyle="bold"
+        android:text="@string/hours_of_operation"
+        android:background="@color/Contact_info_background"
+        />
+    <TextView
+        android:id="@+id/contact_info_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_info_2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="@dimen/Outside_margin"
+        android:textSize="@dimen/contact_info_size"
+        android:text="@string/phone_number"
+        android:textStyle="bold"
+        android:paddingHorizontal="@dimen/space_between_lines"
+        android:background="@color/Contact_info_background"
+        />
+    <TextView
+        android:id="@+id/contact_info_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_info_3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="@dimen/Outside_margin"
+        android:text="@string/website"
+        android:textSize="@dimen/contact_info_size"
+        android:textStyle="bold"
+        android:paddingHorizontal="@dimen/space_between_lines"
+        android:background="@color/Contact_info_background"
+        />
+
+    <TextView
+        android:id="@+id/contact_info_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fif_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/Outside_margin"
+        android:layout_marginTop="@dimen/mission_statement_position"
+        android:background="@color/logo_transparency"
+        android:paddingHorizontal="@dimen/space_between_lines"
+        android:text="@string/mission_statement"
+        android:textSize="@dimen/contact_info_size"
+        android:textColor="@color/contact_info"
+        android:textStyle="bold" />
 
 </RelativeLayout>

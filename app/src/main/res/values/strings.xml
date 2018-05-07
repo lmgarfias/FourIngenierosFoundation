@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Four Ingenieros Foundation</string>
+    <string name ="app_name">FIF </string>
+    <string name ="address">430 P St, Santa Barbara, CA</string>
+    <string name ="email_address">fouringenierosfoundation@gmail.com</string>
+    <string name ="website">fouringenierosfoundation.org </string>
+    <string name="instagram_account_name">fouringenierosfoundation</string>
+    <string name ="business_name">Four Ingenieros Foundation</string>
+    <string name="phone_number">(805) 665-3687</string>
+    <string name="hours_of_operation"> M-F 8:00am - 5:00pm PDT </string>
+    <string name="mission_statement">We believe in providing educational assistance towards underrepresented students who have the vision to obtain a career in science, technology, engineering, and mathematics.</string>
+    <string name="vision_statement">We envision a world where minorities are key contributors and innovators in the science, technology, engineering, and mathematical fields.</string>
+    <string name="fif_hashtag">#UnIngenieroEsParaSiempre</string>
+
+
+
 </resources>
